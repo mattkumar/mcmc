@@ -33,7 +33,7 @@ Briefly, I cover the following concepts in a few (well commented) R scripts:
 * Visualize results
   + Build an intuition for what the MCMC algorithm does through the use of animations via the `{gganimate}` package
  
-Some prior knowledge of Bayesian statistics is useful.
+Some prior knowledge of Bayesian statistics is useful. No pun intended :)
 
 ## Visualization 1: Step-by-Step
 
@@ -50,3 +50,15 @@ This is an example visualization that shows the chain running for the full 10,00
 ```{r, echo = F}
 knitr::include_graphics('full.gif')
 ```
+
+## Visualization 3: Multiple Chains
+
+This is an example visualization that shows 4 chains attempting to estimate parameters of the Logistic Regression model. Each chain is initialized with a unique set of starting values. This code provides the basis of further study into consequences of different starting values strategies (e.g. does one set take longer to eventually reach the target space than another?).
+
+```{r, echo = F}
+knitr::include_graphics('multi.gif')
+```
+
+## Future Visualization
+
+An idea for the a future visualization, similar to visualization 3, is to alter the variance(s) of the candidate generating distribution(s) from very small to very large. Can you see the issue with picking a variance that's too small or too large? What practical consequence does this have in the analysis? Consider looking at the accept or reject % of each chain :)
