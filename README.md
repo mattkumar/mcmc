@@ -1,11 +1,14 @@
-# mcmc
-Visualizing random-walk Metropolis Hastings MCMC
+# Visualizing random-walk Metropolis Hastings MCMC
 
-Tutorial: ![Here](https://rpubs.com/matt-kumar/mcmc)
+Tutorial: [Located Here](https://rpubs.com/matt-kumar/mcmc)
 
-Visualizations:
-![v1](full.gif)
+## Visualizations:
 
+### First n steps
 ![v2](mini.gif)
 
+### Full speed
+![v1](full.gif)
+
+### Multiple Samplers
 ![v3](multi.gif)
